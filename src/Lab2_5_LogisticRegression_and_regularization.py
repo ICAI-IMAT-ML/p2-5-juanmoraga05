@@ -150,7 +150,7 @@ class LogisticRegressor:
         - A numpy array of shape (m,) containing the class label (0 or 1) for each sample.
         """
 
-        # TODO: Predict the class for each input data given the threshold in the argument
+        # Predict the class for each input data given the threshold in the argument
         probabilities = self.predict_proba(X)
         classification_result = np.where(probabilities > threshold, 1, 0)
 
